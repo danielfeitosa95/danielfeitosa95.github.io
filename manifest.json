@@ -1,13 +1,13 @@
 {
-  "$schema": "https://schemas.botframework.com/schemas/skill-schema.json",
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
+  "$id": "bot_chatbot_prd",
   "name": "bot_chatbot_prd",
-  "version": "1.0",
-  "manifestVersion": "1.0",
+  "version": "1.0.0",
   "publisherName": "Contoso",
   "description": "ChatBot ServiceDesk (produção)",
-  "icons": {
-    "default": "https://docs.botframework.com/static/devportal/client/images/bot-framework-default.png"
-  },
+  "iconUrl": "https://docs.botframework.com/static/devportal/client/images/bot-framework-default.png",
+  "privacyUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/privacy.html",
+  "license": "",
   "endpoints": [
     {
       "name": "production",
@@ -17,5 +17,18 @@
     }
   ],
   "authenticationConnections": [],
-  "actions": []
+  "activities": [
+    {
+      "id": "message",
+      "description": "Recebe atividades de mensagem do usuário",
+      "type": "message"
+    }
+  ],
+  "activitiesSent": [
+    {
+      "id": "event",
+      "description": "Envia eventos proativos quando necessário",
+      "type": "event"
+    }
+  ]
 }
