@@ -1,34 +1,32 @@
 {
-  "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.2.json",
-  "$id": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/skill-manifest.json",
+  "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
+  "$id": "bot_chatbot_prd",
   "name": "bot_chatbot_prd",
   "version": "1.0.0",
-  "publisherName": "Contoso",
   "description": "ChatBot ServiceDesk (produção)",
-  "iconUrl": "https://docs.botframework.com/static/devportal/client/images/bot-framework-default.png",
+  "publisherName": "Contoso",
   "privacyUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/privacy.html",
-  "licenseUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/license.html",
+  "copyright": "Copyright (c) Contoso. All rights reserved.",
+  "license": "",
+  "iconUrl": "https://docs.botframework.com/static/devportal/client/images/bot-framework-default.png",
+  "tags": [
+    "production",
+    "serviceDesk",
+    "skill"
+  ],
   "endpoints": [
     {
-      "name": "production",
+      "name": "default",
       "protocol": "BotFrameworkV3",
+      "description": "Endpoint de produção",
       "endpointUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/api/messages",
       "msAppId": "d9dde957-adcb-4291-b019-3c5ab17e28b0"
     }
   ],
-  "authenticationConnections": [],
-  "activities": [
-    {
-      "id": "message",
+  "activities": {
+    "message": {
       "type": "message",
       "description": "Recebe atividades de mensagem do usuário"
     }
-  ],
-  "activitiesSent": [
-    {
-      "id": "event",
-      "type": "event",
-      "description": "Envia eventos proativos quando necessário"
-    }
-  ]
+  }
 }
