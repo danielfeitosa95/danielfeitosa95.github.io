@@ -1,24 +1,24 @@
 {
   "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
-  "$id": "bot_chatbot_prd",
-  "name": "bot_chatbot_prd",
-  "version": "1.0.0",
-  "description": "ChatBot ServiceDesk (produção)",
-  "publisherName": "Contoso",
+  "$id": "FleuryFiveNineSkill",
+  "name": "Fleury Five9 Skill",
+  "version": "1.0",
+  "description": "Skill para transferir conversas ao Five9",
+  "publisherName": "Grupo Fleury",
   "privacyUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/privacy.html",
-  "copyright": "Copyright (c) Contoso. All rights reserved.",
+  "copyright": "© Grupo Fleury",
   "license": "",
-  "iconUrl": "https://docs.botframework.com/static/devportal/client/images/bot-framework-default.png",
+  "iconUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/assets/icon.png",
   "tags": [
-    "production",
-    "serviceDesk",
-    "skill"
+    "five9",
+    "skill",
+    "fleury"
   ],
   "endpoints": [
     {
       "name": "default",
       "protocol": "BotFrameworkV3",
-      "description": "Endpoint de produção",
+      "description": "Endpoint principal do skill Fleury Five9",
       "endpointUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/api/messages",
       "msAppId": "d9dde957-adcb-4291-b019-3c5ab17e28b0"
     }
@@ -26,7 +26,7 @@
   "activities": {
     "message": {
       "type": "message",
-      "description": "Recebe atividades de mensagem do usuário"
+      "description": "Envia e recebe mensagens entre o bot e o Five9"
     }
   }
 }
