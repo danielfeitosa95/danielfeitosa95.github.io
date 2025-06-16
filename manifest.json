@@ -1,13 +1,12 @@
 {
   "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
-  "$id": "FleuryFiveNineSkill",
+  "$id": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/skill-manifest.json",
   "name": "Fleury Five9 Skill",
   "version": "1.0",
   "description": "Skill para transferir conversas ao Five9",
   "publisherName": "Grupo Fleury",
   "privacyUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/privacy.html",
-  "copyright": "© Grupo Fleury",
-  "license": "",
+  "licenseUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/license.html",
   "iconUrl": "https://bot-framework-fivenine-fleury.brazilsouth.cloudapp.azure.com/assets/icon.png",
   "tags": [
     "five9",
